@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="rootPane" fx:id="principalPane" opacity="0.0" prefHeight="550.0" prefWidth="834.0" style="-fx-border-color: black;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceGrafica.SplashController">
+   <children>
+      <Pane id="paneLogin" fx:id="principal2Pane" layoutX="137.0" layoutY="90.0" prefHeight="371.0" prefWidth="561.0" style="-fx-background-color: #fff; -fx-background-radius: 22 0 22 0;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label fx:id="nomeLabel" layoutX="56.0" layoutY="40.0" text="SGU - Sistema de Gestão Universitaria" textFill="#1d6102">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="olaLabel" alignment="CENTER" layoutX="73.0" layoutY="83.0" prefHeight="49.0" prefWidth="419.0" text="OLÁ! SEJA BEM VINDO AO SISTEMA" textAlignment="CENTER" textFill="#b1b1b1" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Pane fx:id="spinnerPane" layoutX="167.0" layoutY="132.0" opacity="0.0" prefHeight="200.0" prefWidth="226.0">
+               <children>
+                  <Label fx:id="carregandoLabel" alignment="CENTER" layoutY="157.0" prefHeight="29.0" prefWidth="226.0" text="Carregando" textAlignment="CENTER" textFill="#b1b1b1" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXSpinner layoutX="67.0" layoutY="37.0" prefHeight="97.0" prefWidth="92.0" radius="60.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

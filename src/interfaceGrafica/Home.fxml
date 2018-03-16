@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="680.0" prefHeight="680.0" prefWidth="1280.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceGrafica.HomeController">
+   <children>
+      <AnchorPane prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #404300;" AnchorPane.bottomAnchor="625.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="drawerImage" fitHeight="46.0" fitWidth="42.0" layoutX="23.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/ic_view_headline_white_24dp_2x.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="55.0" prefWidth="87.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="55.0" prefWidth="170.0" spacing="2.0">
+                     <children>
+                        <VBox alignment="CENTER">
+                           <children>
+                              <ImageView fx:id="minimizarImage" fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imagens/Minimize%20Window_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="74.0" layoutY="10.0">
+                           <children>
+                              <ImageView fx:id="fecharImage" fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imagens/Close%20Window_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane1" layoutX="240.0" layoutY="107.0" prefHeight="300.0" prefWidth="1280.0" AnchorPane.bottomAnchor="368.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0" />
+      <AnchorPane fx:id="pane2" layoutX="10.0" layoutY="64.0" prefHeight="300.0" prefWidth="1280.0" AnchorPane.bottomAnchor="368.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0" />
+      <AnchorPane fx:id="pane3" layoutX="10.0" layoutY="64.0" prefHeight="300.0" prefWidth="1280.0" AnchorPane.bottomAnchor="368.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0" />
+      <AnchorPane fx:id="pane4" layoutX="20.0" layoutY="74.0" prefHeight="258.0" prefWidth="1280.0" AnchorPane.bottomAnchor="368.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0" />
+      <AnchorPane layoutY="54.0" prefHeight="129.0" prefWidth="1280.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="110.0" prefWidth="1280.0">
+               <children>
+                  <JFXButton buttonType="RAISED" prefHeight="65.0" prefWidth="513.0" ripplerFill="#ebebeb" style="-fx-background-color: #FFF; -fx-background-radius: 0;" text="Sistema de Gestão Universitaria" textFill="#1d6102">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="33.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <GridPane id="btnHome" layoutY="191.0" opacity="0.9" prefHeight="484.0" prefWidth="641.0" stylesheets="@application.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="315.0" AnchorPane.topAnchor="197.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="230.0" prefWidth="230.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="230.0" prefWidth="230.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="230.0" prefWidth="230.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="115.0" minHeight="115.0" prefHeight="115.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="115.0" minHeight="115.0" prefHeight="115.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="115.0" minHeight="115.0" prefHeight="115.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton id="btnHome" fx:id="btnHome2" buttonType="RAISED" prefHeight="110.0" prefWidth="210.0" style="-fx-background-color: #37081F; -jfx-disable-visual-focus: true;" stylesheets="@application.css" text="SEÇÃO 02" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnHome" fx:id="btnHome1" buttonType="RAISED" prefHeight="110.0" prefWidth="210.0" style="-fx-background-color: #3F4109; -jfx-disable-visual-focus: true;" stylesheets="@application.css" text="SEÇÃO 01" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnHome" fx:id="btnHome3" buttonType="RAISED" prefHeight="110.0" prefWidth="210.0" style="-fx-background-color: #090F00; -jfx-disable-visual-focus: true;" stylesheets="@application.css" text="SEÇÃO 03" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnHome" fx:id="btnHome4" buttonType="RAISED" layoutX="10.0" layoutY="10.0" prefHeight="110.0" prefWidth="210.0" style="-fx-background-color: #3F4109; -jfx-disable-visual-focus: true;" stylesheets="@application.css" text="SEÇÃO 04" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnHome" fx:id="btnHome7" buttonType="RAISED" layoutX="10.0" layoutY="174.0" prefHeight="110.0" prefWidth="210.0" style="-fx-background-color: #3F4109; -jfx-disable-visual-focus: true;" stylesheets="@application.css" text="SEÇÃO 07" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnHome" fx:id="btnHome5" buttonType="RAISED" layoutX="224.0" layoutY="10.0" prefHeight="110.0" prefWidth="210.0" style="-fx-background-color: #37081F; -jfx-disable-visual-focus: true;" stylesheets="@application.css" text="SEÇÃO 05" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnHome" fx:id="btnHome8" buttonType="RAISED" layoutX="224.0" layoutY="174.0" prefHeight="110.0" prefWidth="210.0" style="-fx-background-color: #37081F; -jfx-disable-visual-focus: true;" stylesheets="@application.css" text="SEÇÃO 08" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnHome" fx:id="btnHome6" buttonType="RAISED" layoutX="438.0" layoutY="10.0" prefHeight="110.0" prefWidth="210.0" style="-fx-background-color: #090F00; -jfx-disable-visual-focus: true;" stylesheets="@application.css" text="SEÇÃO 06" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnHome" fx:id="btnHome9" buttonType="RAISED" layoutX="438.0" layoutY="174.0" prefHeight="110.0" prefWidth="210.0" style="-fx-background-color: #090F00; -jfx-disable-visual-focus: true;" stylesheets="@application.css" text="SEÇÃO 09" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <AnchorPane fx:id="opacityPane" layoutX="21.0" layoutY="274.0" opacity="0.29" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="drawerPane" layoutX="10.0" layoutY="10.0" prefHeight="625.0" prefWidth="236.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="54.0">
+         <children>
+            <GridPane alignment="TOP_CENTER" prefHeight="625.0" prefWidth="236.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="236.0" prefWidth="236.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="166.0" minHeight="30.0" prefHeight="166.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="70.0" minHeight="54.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton id="btnMenuLateral" fx:id="btnMenuLateral2" layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="236.0" ripplerFill="#293d08" text="Dados Pessoais" textFill="#4a7200" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="btnMenuLateral" fx:id="btnMenuLateral3" layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="236.0" ripplerFill="#293d08" text="Button 2" textFill="#4a7200" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="btnMenuLateral" fx:id="btnMenuLateral4" layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="236.0" ripplerFill="#293d08" text="Button 3" textFill="#4a7200" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="btnMenuLateral" fx:id="btnMenuLateral5" layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="236.0" ripplerFill="#293d08" text="Button 4" textFill="#4a7200" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="btnMenuLateral" fx:id="btnMenuLateral6" layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="236.0" ripplerFill="#293d08" text="Button 5" textFill="#4a7200" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="btnMenuLateral" fx:id="btnMenuLateral7" layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="236.0" ripplerFill="#293d08" text="Button 6" textFill="#4a7200" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <VBox id="menuUsuario" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #797979; -fx-border-width: 0 0 0.5 0;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="120.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imagens/Male%20User_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <VBox>
+                           <children>
+                              <Label fx:id="nomeUsuarioLabel" alignment="CENTER" prefHeight="26.0" prefWidth="236.0" text="Nome Usuário" textAlignment="CENTER" textFill="#ffe3e3">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="nivelAcessoLabel" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="24.0" prefWidth="237.0" text="Administrador" textAlignment="CENTER" textFill="#ffe3e3">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
